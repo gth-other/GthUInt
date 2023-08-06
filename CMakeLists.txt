@@ -1,0 +1,7 @@
+cmake_minimum_required(VERSION 3.25)
+project(GthUInt)
+set(CMAKE_CXX_STANDARD 20)
+add_definitions(-Werror)
+add_definitions(-O3)
+add_definitions(-flto)
+add_executable(GthUInt examples/main.cpp src/GthUInt.hpp src/GthUInt.cpp)
